@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tejasvini Sharma · Portfolio (in progress)</title>
+  <meta name="description" content="B.Tech CSE student at LPU learning Python automation and web development by building small tools for local businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #FFF8F1;
+      --navy: #1F2A44;
+      --slate: #3B4660;
+      --deep: #6B4E9B;
+      --lavender: #CDB4DB;
+      --blush: #F4C2CF;
+      --mint: #BEE3D0;
+      --card: #FFFFFF;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      background: var(--cream);
+      color: var(--slate);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    .page { position: relative; overflow: hidden; min-height: 100vh; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(2px); z-index: 0; pointer-events: none; }
+    .b1 { width: 260px; height: 220px; background: var(--lavender); top: -90px; right: -90px; border-radius: 45% 55% 60% 40%; }
+    .b2 { display: none; width: 180px; height: 170px; background: var(--blush); top: 140px; right: -100px; border-radius: 55% 45% 40% 60%; }
+    .b3 { width: 200px; height: 180px; background: var(--mint); bottom: -120px; left: -110px; border-radius: 40% 60% 55% 45%; }
+    main { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; padding: 56px 22px 48px; }
+    .tag {
+      display: inline-block; font-size: 14px; font-weight: 500; color: var(--deep);
+      background: rgba(205, 180, 219, 0.35); padding: 6px 14px; border-radius: 999px; margin-bottom: 18px;
+    }
+    h1 { font-family: "Poppins", system-ui, sans-serif; font-weight: 600; color: var(--navy); font-size: 34px; line-height: 1.2; margin: 0 0 14px; }
+    .lead { font-size: 18px; margin: 0 0 8px; }
+    .meta { font-size: 15px; margin: 0 0 28px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 44px; }
+    .btn {
+      display: inline-block; text-decoration: none; font-weight: 500; font-size: 16px;
+      padding: 12px 22px; border-radius: 999px; min-height: 44px;
+    }
+    .btn-primary { background: var(--deep); color: #fff; }
+    .btn-secondary { background: transparent; color: var(--deep); border: 2px solid var(--deep); padding: 10px 20px; }
+    .btn:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+    h2 { font-family: "Poppins", system-ui, sans-serif; font-weight: 600; color: var(--navy); font-size: 22px; margin: 0 0 6px; }
+    .section-note { font-size: 15px; margin: 0 0 18px; }
+    .cards { display: grid; gap: 14px; }
+    .card {
+      background: var(--card); border-radius: 18px; padding: 20px 20px 18px;
+      box-shadow: 0 1px 2px rgba(31, 42, 68, 0.06), 0 6px 20px rgba(31, 42, 68, 0.05);
+      border-left: 6px solid var(--lavender);
+    }
+    .card:nth-child(2) { border-left-color: var(--blush); }
+    .card:nth-child(3) { border-left-color: var(--mint); }
+    .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .card h3 { font-family: "Poppins", system-ui, sans-serif; font-weight: 600; color: var(--navy); font-size: 18px; margin: 0 0 6px; }
+    .card p { margin: 0; font-size: 15.5px; }
+    .tech { margin-top: 10px !important; font-size: 14px !important; color: #5A6480; }
+    .status {
+      flex-shrink: 0; font-size: 12.5px; font-weight: 500; letter-spacing: 0.2px;
+      padding: 4px 10px; border-radius: 999px; background: #F1ECF6; color: var(--deep); white-space: nowrap;
+    }
+    .learning { margin-top: 40px; }
+    .learning ul { margin: 0; padding-left: 20px; }
+    footer { position: relative; z-index: 1; text-align: center; font-size: 13.5px; padding: 0 22px 32px; color: #6A7390; }
+    @media (min-width: 720px) {
+      main { padding-top: 88px; }
+      h1 { font-size: 44px; }
+      .b1 { width: 380px; height: 320px; }
+      .b2 { display: block; width: 260px; height: 240px; top: 220px; }
+      .b3 { width: 320px; height: 300px; bottom: -110px; left: -90px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="blob b1" aria-hidden="true"></div>
+  <div class="blob b2" aria-hidden="true"></div>
+  <div class="blob b3" aria-hidden="true"></div>
+
+  <main>
+    <span class="tag">Portfolio in progress</span>
+    <h1>Hi, I'm Tejasvini Sharma</h1>
+    <p class="lead">I'm learning Python automation and web development by building small, useful tools for local businesses.</p>
+    <p class="meta">B.Tech Computer Science, Lovely Professional University (2025–2029) · Jalandhar, Punjab</p>
+
+    <div class="links">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/tejasvinisharma" target="_blank" rel="noopener">Follow on LinkedIn</a>
+      <a class="btn btn-secondary" href="https://github.com/tejasvinisharma" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-secondary" href="https://topmate.io/tejasvini_sharma10" target="_blank" rel="noopener">Topmate</a>
+    </div>
+
+    <h2>What I'm building</h2>
+    <p class="section-note">These are planned. Each one gets a link here once its code is on GitHub.</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-head">
+          <h3>CertiGen</h3>
+          <span class="status">Planned · first</span>
+        </div>
+        <p>A Python tool that turns a spreadsheet of names into one ready-to-print PDF certificate per person, for coaching institutes, schools and college clubs.</p>
+        <p class="tech">Python · pandas · Pillow or ReportLab</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Excel Report Cleaner</h3>
+          <span class="status">Planned</span>
+        </div>
+        <p>A script that merges a month of messy spreadsheets into one clean workbook: duplicates removed, dates fixed, and a summary sheet with totals.</p>
+        <p class="tech">Python · pandas · openpyxl</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Coaching Institute Demo Website</h3>
+          <span class="status">Planned</span>
+        </div>
+        <p>A mobile-first one-page site with courses, timings, fees, an enquiry form and a WhatsApp button. A demo with a made-up institute, not a client site.</p>
+        <p class="tech">HTML · CSS · JavaScript</p>
+      </article>
+    </div>
+
+    <section class="learning">
+      <h2>What I'm learning</h2>
+      <ul>
+        <li>Python, as part of my current semester</li>
+        <li>Git and GitHub, starting with this site</li>
+        <li>Next: pandas, then HTML and CSS</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Open to Python and software development internships. Message me on LinkedIn.</footer>
+</div>
+</body>
+</html>
